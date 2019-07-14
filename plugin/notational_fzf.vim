@@ -7,13 +7,6 @@ function! s:single_quote(str)
     return "'" . a:str . "'"
 endfunction
 
-"============================= Dependencies ================================
-
-if !executable('rg')
-    echoerr '`rg` is not installed. See https://github.com/BurntSushi/ripgrep for installation instructions.'
-    finish
-endif
-
 "============================== User settings ==============================
 
 
