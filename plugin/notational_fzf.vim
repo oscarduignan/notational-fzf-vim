@@ -3,6 +3,8 @@
 " XXX: fnameescape vs. shellescape: for vim's consumption vs. the shell's
 " consumption
 
+if exists('g:nv_search_paths')
+
 function! s:single_quote(str)
     return "'" . a:str . "'"
 endfunction
@@ -226,4 +228,5 @@ command! -nargs=* -bang NV
                                                        \ ,':')
                                \ ])},<bang>0))
 
+end
 
