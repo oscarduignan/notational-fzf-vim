@@ -9,19 +9,6 @@ endfunction
 
 "============================== User settings ==============================
 
-
-if !exists('g:nv_search_paths')
-
-    if exists('g:nv_directories')
-        echoerr '`g:nv_directories` has been renamed `g:nv_search_paths`. Please update your config files.'
-    else
-        echoerr '`g:nv_search_paths` is not defined.'
-    endif
-
-    finish
-
-endif
-
 let s:window_direction = get(g:, 'nv_window_direction', 'down')
 let s:window_width = get(g:, 'nv_window_width', '40%')
 
